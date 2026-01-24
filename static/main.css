@@ -1,0 +1,42 @@
+body {
+    display: block;
+    margin: 0;
+    padding: 8px;
+    padding-top: 30px;
+}
+p {
+    display: block;
+    margin-inline: auto;
+    max-width: fit-content;
+}
+a {
+    display: block;
+    margin-inline: auto;
+    max-width: fit-content;
+    margin-bottom: 8px;
+}
+.oops{
+    color: red;
+}
+.cool{
+    color: green;
+}
+.label{
+    font-size: small;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+form {
+    display: block;
+}
+input{
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 8px;
+}
+label{
+    max-width: fit-content;
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 8px;
+}

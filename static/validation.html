@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Перевірка</title>
+</head>
+<body>
+    {{title}}
+    <form action="/validate" method="post">
+        {{login_text}}
+        <input type="text" name="login" id="login" required/>
+        {{name_text}}
+        <input type="text" name="name" id="name" required>
+        {{password_text}}
+        <input type="text" name="password" id="password" required>
+        {{email_text}}
+        <input type="email" name="email" id="email" required>
+        {{birthday_text}}
+        <input type="date" name="birthday" id="birthday" required>
+        <input type="submit" value="Підтвердити" id="butt"/>
+        <a href="/">На головну</a>
+    </form>
+    <p>Ця сторінка не має функціоналу. Тут я просто показую як я би імлементував перевірку валідності різних значень які користувач може вводити. Я це роблю бо сторінка входу нічого не валідує, чисто щоб показати що я можу.</p>
+    <p>Після того як всі поля буде запоснено і форму надіслано форма підсвітить поля які містили нувалідні дані. Самі поля зітруться.</p>
+    <p>
+        Літери у всіх полях лише з кодування ASCII<br>
+        Логін - від 5 до 30 літер включно, цифри чи символ "_"<br>
+        Ім'я - від 5 до 30 літер включно<br>
+        Паоль - від 8 до 50 символів включно, та хоча б одне з наступного: цифра, мала літера, велика літера та символ серед ()!#${}_-+<br>
+        Дата народження не повинна перевищевати поточну дату<br>
+        Пошту мені лінь пояснювати. Ось реджекс: [a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$
+    </p>
+</body>
+</html>

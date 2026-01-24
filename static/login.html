@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Вхід</title>
+</head>
+<body>
+    <p class="{{class}}">{{title}}</p>
+    <form action="/authenticate" method="POST">
+        <label for="email">Введіть електронну пошту</label>
+        <input type="email" name="email" required />
+        <label for="password">Введіть пароль</label>
+        <input type="text" name="password" required />
+        <input type="submit" value="Submit" />
+    </form>
+    <p>
+        Для адміністратора: пошта admin@host, пароль AdminPassword<br>
+        Для звичаного користувача: user@host, пароль UserPassword
+    </p>
+    <a href="/leve">Вийти з акаунта</a>
+    <a href="/">На головну</a>
+    <p>Тут нема нормальної валідації, до речі, данні просто порівнюються із трафаретом</p>
+    <a href="/validate">Сторінка з нормальною валідацією тут</a>
+</body>
+</html>
